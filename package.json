@@ -1,0 +1,26 @@
+{
+  "name": "romaisweb",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "yarn install --check-files && BASE_URL_API=http://localhost:3000 nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@nuxtjs/bootstrap-vue": "^2.0.4",
+    "bootstrap": "^4.6.0",
+    "bootstrap-vue": "^2.21.2",
+    "core-js": "^3.15.1",
+    "node-sass": "^6.0.1",
+    "nuxt": "^2.15.7",
+    "nuxt-fontawesome": "^0.4.0"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.15.7",
+    "@nuxt/typescript-build": "^2.1.0",
+    "sass-loader": "^10.1.1"
+  }
+}
