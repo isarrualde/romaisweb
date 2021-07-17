@@ -29,12 +29,6 @@ export default {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build',
-  ],
-
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/bootstrap
@@ -43,5 +37,53 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+  
+  buildModules: [
+    '@nuxt/typescript-build',
+    '@nuxtjs/fontawesome',
+  ],
+  
+  fontawesome: {
+    icons: {
+      regular: ['faComment', 'faThumbsUp'],
+      brands: ['faMedium'],
+      solid: [
+        'faArrowLeft',
+        'faBolt',
+        'faCalendar',
+        'faChartLine',
+        'faChevronDown',
+        'faChevronUp',
+        'faCircle',
+        'faClock',
+        'faCog',
+        'faComment',
+        'faComments',
+        'faEdit',
+        'faEraser',
+        'faFilter',
+        'faHistory',
+        'faImage',
+        'faInfoCircle',
+        'faLink',
+        'faNewspaper',
+        'faPencilRuler',
+        'faPlus',
+        'faQuoteLeft',
+        'faQuoteRight',
+        'faSearch',
+        'faSignOutAlt',
+        'faThLarge',
+        'faThumbsUp',
+        'faTimes',
+        'faTrash',
+        'faTrophy',
+        'faUpload',
+        'faUser',
+        'faUserEdit',
+        'faUsers',
+      ]
+    },
   }
 }
