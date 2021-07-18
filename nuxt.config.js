@@ -2,7 +2,7 @@ export default {
   ssr: false,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'romaisweb',
+    title: 'ROMAIS - Inclusive Design',
     htmlAttrs: {
       lang: 'en'
     },
