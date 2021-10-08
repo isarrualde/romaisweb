@@ -7,12 +7,18 @@ export default {
       lang: 'en'
     },
     meta: [
+      { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content:
-        'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui'
-       },
-      { name: 'format-detection', content: 'telephone=no' }
+      {
+        name: 'viewport',
+        content:
+          'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui'
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: process.env.npm_package_description || ''
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -47,7 +53,7 @@ export default {
   fontawesome: {
     icons: {
       regular: ['faComment', 'faThumbsUp'],
-      brands: ['faMedium'],
+      brands: ['faMedium', 'faGithub' , 'faLinkedin', 'faCodepen'],
       solid: [
         'faArrowLeft',
         'faBolt',

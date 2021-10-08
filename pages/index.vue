@@ -4,7 +4,7 @@
     <home />
 
     
-    <!-- Add the code below inside the <body> tags of your HTML page -->
+    <!-- Add the code below inside the <body> tags of your HTML page 
     <script>
     window.VIDEOASK_EMBED_CONFIG = {
       "kind": "widget",
@@ -18,10 +18,10 @@
       }
     }
     </script>
-    <script src="https://www.videoask.com/embed/embed.js"></script>
+    <script src="https://www.videoask.com/embed/embed.js"></script>-->
     <!-- Important!!! In order to allow your videoask to open up on the same page when interacting with the widget, your website must use the secure https:// protocol (i.e have an SSL certificate). Otherwise, when clicking the widget, a new tab will be automatically opened in the browser.
     -->
-      </div>
+  </div>
 </template>
 
 <script lang="ts">

@@ -9,11 +9,11 @@
               <h3 class="display-4 heading-romais mt-lg-3 mb-5 text-lg-left text-md-center">Inclusive Design and <a href="#">#a11y</a> advocate</h3>
               <p class="lead font-weight-normal mb-lg-5 text-lg-left text-md-center">I help software companies build Modular Atomic Design Systems for their platforms with focus on User Diversity. </p>
               <div class="mx-auto d-block text-lg-left text-sm-left text-md-center text-xs-left">
-                <b-button variant="secondary"  class="text-textbutton font-weight-bold btn-mobile mb-3">
+                <b-button variant="secondary"  class="text-textbutton font-weight-bold btn-mobile mb-3" to="/calendar">
                   <font-awesome-icon  class="mr-2" :icon="['fa', 'calendar']"/>
                   Book a meeting
                 </b-button>
-                <b-link class="ml-md-4 ml-lg-4 mb-3">Or See My Work (Design Mockups)</b-link>
+                <NuxtLink class="ml-md-4 ml-lg-4 mb-3 d-inline-block" to="/work">Or See My Work - Design Mockups - </NuxtLink>
               </div>
             </b-col>
             <b-col lg="6" sm="12">
@@ -69,7 +69,7 @@
                 Inclusion means many different things to different people, and maybe that’s the point. It should adapt to fit a diverse range of situations. But to make meaningful progress towards inclusion, we need to learn to recognize its inverse. Exclusion just might be the ultimate shared experience and sharp focus that leads the way.
               </p>
               <p class="text-center">
-                <b-link class="text-center">See examples of inclusive design in action!</b-link>
+                <NuxtLink class="nav-link" to="/work">See examples of inclusive design in action!</NuxtLink>
               </p>
             </b-col>
           </b-row>
@@ -84,13 +84,13 @@
               <p class="lead font-weight-normal text-white mb-5 text-md-center text-lg-left">
                 Let’s schedule a meeting! We can start by discussing your SaaS Platform and I can recommend the best route forward.
               </p>
-              <b-button variant="secondary"  class="text-textbutton font-weight-bold mb-3 btn-mobile">
+              <b-button to="/calendar" variant="secondary"  class="text-textbutton font-weight-bold mb-3 btn-mobile">
                 <font-awesome-icon  class="mr-2" :icon="['fa', 'calendar']"/>
                 Book a meeting
               </b-button>
             </b-col>
             <b-col lg="6" sm="12">
-              <img class="img-fluid" src="../assets/img/romais-book.png" />
+              <!--<img class="img-fluid" src="../assets/img/romais-book.png" />-->
             </b-col>
           </b-row>
         </div>

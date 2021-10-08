@@ -9,7 +9,7 @@
         <div class="container">
           <b-navbar toggleable="sm" type="light" class="bg-white sticky-top" variant="light">
             <b-navbar-brand href="#">
-              <NuxtLink to="/">ROMAIS</NuxtLink>
+              <NuxtLink to="/"><img src="../assets/img/logo.png" /></NuxtLink>
             </b-navbar-brand>
             
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -17,10 +17,11 @@
               <!-- Right aligned nav items -->
               <b-navbar-nav class="global-nav pr-lg-5">
                 <NuxtLink class="nav-link" to="/">Home</NuxtLink>
-                <b-nav-item-dropdown text="Work" right>
+                <NuxtLink class="nav-link" to="/work">Work</NuxtLink>
+                <!--<b-nav-item-dropdown text="Work" right>
                   <b-dropdown-item href="#">Before & After</b-dropdown-item>
                   <b-dropdown-item href="#">Services</b-dropdown-item>
-                </b-nav-item-dropdown>
+                </b-nav-item-dropdown>-->
                
                 <NuxtLink class="nav-link" to="/resume">Resume</NuxtLink>
                 
@@ -28,7 +29,7 @@
                   Blog
                 </b-nav-item>
               </b-navbar-nav>
-              <b-button variant="primary"> 
+              <b-button variant="primary" to="/calendar"> 
                 <font-awesome-icon  class="mr-2" :icon="['fa', 'calendar']"/>
                 Book a meeting
               </b-button>
